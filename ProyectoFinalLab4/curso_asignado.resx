@@ -146,6 +146,15 @@
   <data name="bunifuLabel3.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semibold'; font-size: 35pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
+  <data name="bunifuTextBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEcAAAArCAYAAAAqhpU+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACPSURBVGhD7dDBCcMwAARB9V+VhcpIGSkgQdgQEsK6gVm4
+        zz1n6Ka11uM4jped2x4XzRj70KftcdHA+Q1OBCeCE8GJ4ERwIjgRnAhOBCeCE8GJ4ERwIjgRnAhOBCeC
+        E8GJ4ERwIjgRnAhOBCeCE8GJ4ERwIjgRnAhOBCeCE8GJ4ERfOHPO5z7s3Pa4aPS/Md6OG2qSKBbzSgAA
+        AABJRU5ErkJggg==
+</value>
+  </data>
   <data name="bunifuLabel18.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semibold'; font-size: 30pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
@@ -257,12 +266,11 @@
   </data>
   <data name="bunifuTextBox7.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAT0AAAArCAYAAAAKY1+vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADKSURBVHhe7dQxDQMxAARB80fll2EERgDkZclNKHhnpGsO
-        wA6AnLXWZ875MzO7dbtzJ3lj7APgZrtzJ3miB9xP9IAU0QNSRA9IET0gRfSAFNEDUkQPSBE9IEX0gBTR
-        A1JED0gRPSBF9IAU0QNSRA9IET0gRfSAFNEDUkQPSBE9IEX0gBTRA1JED0gRPSBF9IAU0QNSRA9IET0g
-        RfSAFNEDUkQPSBE9IEX0gBTRA1JED0gRPSBF9ICUv+g9z/Pdh5nZrdudO8kDqBjjBUMgAuJNXsH2AAAA
-        AElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAPIAAAArCAYAAABCWdVDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC5SURBVHhe7dOxCQMxAARB9V+VHpXhMlyAH4ESl6BlBi65
+        fAcQsdb6zDl/ZnbXdrsn4zH2Adxnt3syFjLcSsgQIGQIEDIECBkChAwBQoYAIUOAkCFAyBAgZAgQMgQI
+        GQKEDAFChgAhQ4CQIUDIECBkCBAyBAgZAoQMAUKGACFDgJAhQMgQIGQIEDIECBkChAwBQoYAIUOAkCFA
+        yBAgZAgQMgQIGQKEDAF/IT/P892Hmd213e7JGLjbGC+lPpLcqUHOpwAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="bunifuLabel10.BaseStylesheet" xml:space="preserve">
