@@ -78,5 +78,10 @@ namespace ProyectoFinalLab4
         {
 
         }
+
+        private void bunifuLabel18_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
