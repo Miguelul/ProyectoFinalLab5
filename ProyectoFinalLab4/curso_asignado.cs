@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaNegocio;
 
 namespace ProyectoFinalLab4
 {
     public partial class curso_asignado : Form
     {
+        CN_VentasTaquillas objetoCN = new CN_VentasTaquillas();
         public curso_asignado()
         {
             InitializeComponent();
@@ -35,8 +37,11 @@ namespace ProyectoFinalLab4
 
         private void bunifuButton5_Click(object sender, EventArgs e)
         {
+            
             cursos formulario2 = new cursos();
             formulario2.Show();
+          
+
         }
 
         private void bunifuButton9_Click(object sender, EventArgs e)
