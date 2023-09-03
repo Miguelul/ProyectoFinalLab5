@@ -8,57 +8,60 @@ using System.Data;
 
 namespace CapaDatos
 {
-    public class CD_Pelicula
+    public class CD_ClaseCurso
     {
         private CD_Conexion conexion = new CD_Conexion();
         SqlDataReader leer;
         DataTable tabla = new DataTable();
         SqlCommand comando = new SqlCommand();
 
-        public DataTable MostrarPelicula()
+        public DataTable MostrarClaseCurso()
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "MostrarPelicula";
+            comando.CommandText = "MostrarClaseCurso";
             comando.CommandType = CommandType.StoredProcedure;
             leer = comando.ExecuteReader();
-            tabla.Clear();  
+            tabla.Clear();
             tabla.Load(leer);
             conexion.CerrarConexion();
             return tabla;
         }
-        public void Insertar(string Titulo, string Categoria, string Fecha_de_Salida, double precio)
+
+        public void InsertarClaseCurso(int idCursos, int idHorariClase, int idAula, int idAsignaturaProfesor)
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "InsetarPelicula";
+            comando.CommandText = "InsertarClaseCurso";
             comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@Titulo",Titulo);
-            comando.Parameters.AddWithValue("@Categoria",Categoria);
-            comando.Parameters.AddWithValue("@Fecha_de_Salida",Fecha_de_Salida);
-            comando.Parameters.AddWithValue("@Precio", precio);
+            comando.Parameters.AddWithValue("@idCursos", idCursos);
+            comando.Parameters.AddWithValue("@idHorariClase", idHorariClase);
+            comando.Parameters.AddWithValue("@idAula", idAula);
+            comando.Parameters.AddWithValue("@idAsignaturaProfesor", idAsignaturaProfesor);
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
             conexion.CerrarConexion();
         }
-        public void ModificarPelicula(string Titulo, string Categoria, string Fecha_de_Salida, double precio, int id)
+
+        public void ModificarClaseCurso(int idClaseCurso, int idCursos, int idHorariClase, int idAula, int idAsignaturaProfesor)
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "EditarPelicula";
+            comando.CommandText = "ModificarClaseCurso";
             comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@titulo", Titulo);
-            comando.Parameters.AddWithValue("@Categoria", Categoria);
-            comando.Parameters.AddWithValue("@Fecha_de_Salida", Fecha_de_Salida);
-            comando.Parameters.AddWithValue("@Precio", precio);
-            comando.Parameters.AddWithValue("@id", id);
+            comando.Parameters.AddWithValue("@idClaseCurso", idClaseCurso);
+            comando.Parameters.AddWithValue("@idCursos", idCursos);
+            comando.Parameters.AddWithValue("@idHorariClase", idHorariClase);
+            comando.Parameters.AddWithValue("@idAula", idAula);
+            comando.Parameters.AddWithValue("@idAsignaturaProfesor", idAsignaturaProfesor);
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
             conexion.CerrarConexion();
         }
-        public void EliminarPelicula(int IdEmpleado)
+
+        public void EliminarClaseCurso(int idClaseCurso)
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "EliminarPelicula";
+            comando.CommandText = "EliminarClaseCurso";
             comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@Id", IdEmpleado);
+            comando.Parameters.AddWithValue("@idClaseCurso", idClaseCurso);
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
             conexion.CerrarConexion();

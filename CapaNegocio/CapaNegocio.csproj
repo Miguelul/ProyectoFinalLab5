@@ -41,9 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CN_Pelicula.cs" />
-    <Compile Include="CN_VentasTaquillas.cs" />
+    <Compile Include="asignatura.cs" />
+    <Compile Include="asignatura_profesor.cs" />
+    <Compile Include="aula.cs" />
+    <Compile Include="clases_curso.cs" />
+    <Compile Include="cursos.cs" />
+    <Compile Include="disponibilidad.cs" />
+    <Compile Include="horari_clase.cs" />
+    <Compile Include="profesor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="users.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
